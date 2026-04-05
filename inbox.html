@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Sammereoft</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #141414;
+            color: #fff;
+            direction: rtl;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #141414;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            z-index: 1000;
+        }
+        header h1 {
+            color: #e50914;
+            margin: 0;
+            font-size: 24px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #e50914;
+        }
+        .hero {
+            height: 400px;
+            background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+        section {
+            padding: 60px 50px 20px 50px;
+        }
+        h2.section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+        }
+        .card {
+            min-width: 200px;
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card img {
+            width: 100%;
+            display: block;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin: 10px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            background-color: #222;
+            padding: 30px 50px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        .social {
+            background-color: #222;
+            padding: 30px 50px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .social h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 5px 15px;
+            color: #e50914;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #141414;
+            color: #888;
+            margin-top: 20px;
+        }
+        .cards::-webkit-scrollbar {
+            height: 8px;
+        }
+        .cards::-webkit-scrollbar-thumb {
+            background-color: #e50914;
+            border-radius: 4px;
+        }
+        @media(max-width:768px){
+            header {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            .hero h2 {
+                font-size: 24px;
+            }
+            .cards {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>@Sammereoft</h1>
+    <nav>
+        <a href="#films">فلم</a>
+        <a href="#series">سریال</a>
+        <a href="#anime">انیمه</a>
+        <a href="#songs">آهنگ</a>
+        <a href="#animations">انیمیشن</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>به @Sammereoft خوش آمدید</h2>
+</div>
+
+<section id="films">
+    <h2 class="section-title">فلم‌های جدید</h2>
+    <div class="cards">
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>فلم ۱</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>فلم ۲</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>فلم ۳</h3></div>
+    </div>
+</section>
+
+<section id="series">
+    <h2 class="section-title">سریال‌ها</h2>
+    <div class="cards">
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>سریال ۱</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>سریال ۲</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>سریال ۳</h3></div>
+    </div>
+</section>
+
+<section id="anime">
+    <h2 class="section-title">انیمه‌ها</h2>
+    <div class="cards">
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>انیمه ۱</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>انیمه ۲</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>انیمه ۳</h3></div>
+    </div>
+</section>
+
+<section id="songs">
+    <h2 class="section-title">آهنگ‌های جدید</h2>
+    <div class="cards">
+        <div class="card"><img src="https://via.placeholder.com/200x200" alt=""><h3>آهنگ ۱</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x200" alt=""><h3>آهنگ ۲</h3></div>
+    </div>
+</section>
+
+<section id="animations">
+    <h2 class="section-title">انیمیشن‌های جدید</h2>
+    <div class="cards">
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>انیمیشن ۱</h3></div>
+        <div class="card"><img src="https://via.placeholder.com/200x300" alt=""><h3>انیمیشن ۲</h3></div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>تماس با ما</h2>
+    <p>شماره تماس: +93 787782058</p>
+    <p>Email: <a href="mailto:sammersoft@gmail.com">sammersoft@gmail.com</a></p>
+    <p>آدرس: دشت برچی، نقاش سرک نو، حمید بزنس سنتر</p>
+</section>
+
+<section class="social">
+    <h2>ما را دنبال کنید</h2>
+    <div class="social-links">
+        <a href="https://www.facebook.com/samersoft" target="_blank">Facebook: @samersoft</a>
+        <a href="https://www.instagram.com/sammersoft" target="_blank">Instagram: @sammersoft</a>
+        <a href="https://www.tiktok.com/@sammersoft" target="_blank">TikTok: @sammersoft</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 @Sammereoft
+</footer>
+
+</body>
+</html>
